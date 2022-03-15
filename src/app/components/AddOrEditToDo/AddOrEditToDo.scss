@@ -1,0 +1,44 @@
+@use '../../../variables';
+
+.full-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: variables.$modal-background-color;
+    color: black;
+    z-index: 99;
+}
+
+.flex-container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    .submit {
+        width: 350px;
+        height: auto;
+        .submit-button {
+            display: flex;
+            justify-content: center;    
+            margin-top: 10px;
+            button {
+                background-color: variables.$background-head;
+            }
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;    
+            label {
+                margin: 5px 0;
+            }
+        }
+        .warning {
+            color: red;
+        }
+    }
+}
+
+
+

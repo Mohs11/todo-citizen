@@ -1,0 +1,11 @@
+.celebrate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}

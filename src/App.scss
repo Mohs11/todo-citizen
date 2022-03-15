@@ -1,0 +1,60 @@
+@use './variables';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #cfccd6;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .add {
+    background-color: variables.$background-head;
+    padding-top: 3px;
+  }
+  h4 {
+    margin: 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;  
+}
+
+.toDo-list {  
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 0.5rem;
+  margin: 10px;
+  padding: 0;
+  list-style-type: none;
+  width: 900px;
+}
+
+.btn {
+  width: auto;
+  height: 20px;
+  color: black;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);      
+}
+
+
+.icon {
+  font-size: 17px;
+  margin-right: 5px;
+}
